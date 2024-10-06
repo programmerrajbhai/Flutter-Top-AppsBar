@@ -10,6 +10,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+
+        //##################Text Widget Start##################
+         body: Center(
+           child: Text("HELLO WORLD FLUTTER", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.blue),),
+         ),
+        //##################Text Widget End##################
+
+        //##################APP Bar code start##################
+        //##################APP Bar code start##################
         appBar: AppBar(
 
           //Use Background Color on App Bar
@@ -32,6 +41,8 @@ class MyApp extends StatelessWidget {
           leading: Icon(Icons.menu),
 
         ),
+        //##################APP Bar code End##################
+
       ),
     );
   }
