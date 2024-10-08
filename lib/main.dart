@@ -9,15 +9,48 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-
       home: SafeArea(
-          child: Scaffold(
-            body: Container(
-               height: 200,
-              width: 300,
-             color: Colors.amber,
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text("Home"),
+            backgroundColor: Colors.indigo,
+             actions: <Widget>[
+               Icon(Icons.notifications)
+             ],
+          ),
+
+          body: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: <Widget>[
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.amber,
+                ),
+                SizedBox(height: 10,
+                width: 10,),
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.indigo,
+                ),
+                SizedBox(
+                  height: 10,
+                  width: 10,
+                ),
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.indigoAccent,
+                )
+              ],
+
             ),
-          )
+          ),
+
+
+        ),
       ),
 
     );
