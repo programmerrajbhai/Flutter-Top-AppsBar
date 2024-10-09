@@ -18,35 +18,17 @@ class MyApp extends StatelessWidget {
                Icon(Icons.notifications)
              ],
           ),
+          body: ListView(
+            children: <Widget>[
+              ListTile(
 
-          body: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: <Widget>[
-                Container(
-                  height: 200,
-                  width: 200,
-                  color: Colors.amber,
-                ),
-                SizedBox(height: 10,
-                width: 10,),
-                Container(
-                  height: 200,
-                  width: 200,
-                  color: Colors.indigo,
-                ),
-                SizedBox(
-                  height: 10,
-                  width: 10,
-                ),
-                Container(
-                  height: 200,
-                  width: 200,
-                  color: Colors.indigoAccent,
-                )
-              ],
+                title: Text("Learn Flutter with Raj",style: TextStyle(fontSize: 30,fontStyle: FontStyle.normal) ),
+                subtitle: Text("Easy explation with programmer Raj"),
+                leading: CircleAvatar(child: Icon(Icons.man),),
+                trailing: Icon(Icons.camera_alt_rounded),
+              ),
 
-            ),
+            ],
           ),
 
 
